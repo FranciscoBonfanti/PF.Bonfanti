@@ -1,4 +1,8 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+$background-color: #1d1c1c;
+$font-color: white;
+$font-family: Arial, sans-serif;
+
 * {
     padding: 0;
     margin: 0;
@@ -6,10 +10,11 @@
 }
 
 body {
-    background-color: #1d1c1c;
-    color: white;
-    font-family: Arial, sans-serif;
+    background-color: $background-color;
+    color: $font-color;
+    font-family: $font-family;
     height: 100vh;
+
 }
 @media(max-width: 991px) {
     .sidebar {
