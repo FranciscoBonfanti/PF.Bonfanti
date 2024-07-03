@@ -12,7 +12,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
         <div class="container">
           <!--LOGO-->
-          <a class="navbar-brand fs-4" href="#">Hard Code</a>
+          <a class="navbar-brand fs-4" href="../index.html">Hard Code</a>
           <!--BOTON DE MENU-->
           <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -23,7 +23,7 @@
             aria-labelledby="offcanvasNavbarLabel">
             <!--SIDEBAR HEADER-->
             <div class="offcanvas-header text-white border-bottom">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Bootstrap NavBar</h5>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HARD CODE</h5>
               <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
                 aria-label="Close">
               </button>
@@ -32,21 +32,21 @@
             <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
               <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
                 <li class="nav-item mx-2">
-                  <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item mx-2">
-                  <a class="nav-link" href="./pages/hot-sale.html">Hot Sale</a>
+                  <a class="nav-link" href="./hot-sale.html">Hot Sale</a>
                 </li>
                 <li class="nav-item mx-2">
-                  <a class="nav-link" href="./pages/arma-tu-pc.html">Arma tu pc</a>
+                  <a class="nav-link" href="./arma-tu-pc.html">Arma tu pc</a>
                 </li>
                 <li class="nav-item mx-2">
-                  <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
                 </li>
               </ul>
               <!--INICIAR SESION / REGISTRARSE-->
               <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
-                <a href="./pages/inicio-sesion.html" class="text-white text-decoration-none">Iniciar Sesion</a>
+                <a href="#" class="text-white text-decoration-none">Iniciar Sesion</a>
                 <a href="registrate" class="text-white text-decoration-none px-3 py-1 rounded-4"
                   style="background-color: #f94ca4;">Registrate</a>
               </div>
@@ -56,7 +56,39 @@
       </nav>
       <!-- FIN NAV-BAR-->
     </header>
+    <!--Inicio Main Formulario-->
+    <main>
+      <div class="div-formulario">
+          <form class="formulario">
 
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+              <h1>Login</h1>
+
+              <div class="div-input">
+                  <input type="text" name="nombre" placeholder="Nombre" />
+                  <i class='bx bxs-user'></i>
+              </div>
+
+              <div class="div-input">
+                  <input type="password" name="apellido" placeholder="Contraseña" />
+                  <i class='bx bxs-lock-alt' ></i>
+              </div>
+              
+              <div class="recuerdame">
+                  <label><input type="checkbox">Recuérdame</label>
+                  <a href="#">Olvidaste tu Contraseña?</a>
+              </div>
+
+              <button type="submit" class="button-login">Login</button>
+
+              <div class="registrate">
+                  <p>No posees una cuenta?
+                      <a href="#">Crea una cuenta</a>
+                  </p>
+              </div>
+
+          </form>
+      </div>
+  </main>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
