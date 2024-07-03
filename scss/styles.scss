@@ -54,8 +54,10 @@ body {
     background-color: $background-color;
     color: $font-color;
     font-family: $font-family;
-    height: 100%; /* Asegúrate de que el cuerpo ocupe todo el alto disponible */
-    overflow-y: scroll; /* Permite el desplazamiento vertical */
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 991px) {
@@ -162,3 +164,46 @@ body {
         }
     }
 }
+/*=============================================
+=                   Section main                  =
+=============================================*/
+.section_main{
+    background-color: $background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin-top: 55px;
+    .container{
+        width: 100%;
+        height: auto;
+        background-color: $background-color;
+
+        .navbar{
+            width: 100%;
+            height: auto;
+            
+
+            .form-inline{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                
+                // input{
+                    
+                // }
+                // button{
+                    
+                // }
+            }
+        }
+    }
+
+}
+
+
+/*============  End of Section main  =============*/

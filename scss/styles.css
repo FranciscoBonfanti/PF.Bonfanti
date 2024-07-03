@@ -23977,8 +23977,10 @@ body {
   background-color: #1d1c1c;
   color: white;
   font-family: Arial, sans-serif;
-  height: 100%; /* Asegúrate de que el cuerpo ocupe todo el alto disponible */
-  overflow-y: scroll; /* Permite el desplazamiento vertical */
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 991px) {
@@ -24081,4 +24083,36 @@ body {
   .cartas-productos .card {
     width: 100%;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*=============================================
+=                   Section main                  =
+=============================================*/
+.section_main {
+  background-color: #1d1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  margin-top: 55px;
+}
+.section_main .container {
+  width: 100%;
+  height: auto;
+  background-color: #1d1c1c;
+}
+.section_main .container .navbar {
+  width: 100%;
+  height: auto;
+}
+.section_main .container .navbar .form-inline {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/*============  End of Section main  =============*//*# sourceMappingURL=styles.css.map */
