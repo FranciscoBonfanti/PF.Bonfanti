@@ -12067,6 +12067,9 @@ body {
   align-items: center;
   border-radius: 4px;
 }
+.cartas-productos box-icon {
+  cursor: pointer;
+}
 .cartas-productos .card {
   margin: 10px;
   width: calc(25% - 20px);
@@ -12082,8 +12085,39 @@ body {
     width: 100%;
   }
 }
+.cartas-productos .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(236, 227, 227, 0.459);
+}
 
 /*----- FIN CARTAS PRODUCTOS INDEX-------*/
+/*-----  IMG LOCAL INDEX-------*/
+.img-local {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px auto;
+  padding: 10px;
+  width: auto;
+  max-width: 90%;
+  border-radius: 8px;
+}
+
+.img-index {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 15px;
+}
+.img-index:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(236, 227, 227, 0.459);
+}
+
+/*----- FIN IMG LOCAL INDEX-------*/
 /*=============================================
 =                   Section main                  =
 =============================================*/
@@ -12250,11 +12284,15 @@ body {
   align-items: center;
 }
 
+/*=============================================
+=              BUSQUEDA HOT SALE              =
+=============================================*/
 .section-container-hot-sale {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 5px;
 }
 .section-container-hot-sale .container-buscar {
   margin: 10px;
@@ -12262,6 +12300,9 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.section-container-hot-sale .container-buscar h5, .section-container-hot-sale .container-buscar .h5 {
+  font-size: 1.5rem;
 }
 .section-container-hot-sale .container-buscar input {
   border-radius: 4px;
@@ -12275,6 +12316,9 @@ body {
   border-radius: 4px;
   background-color: aquamarine;
   margin-top: 8px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
 }
 .section-container-hot-sale .section_hot-sale {
   background-color: #292626;
@@ -12283,12 +12327,92 @@ body {
   text-align: center;
   border-radius: 4px;
   width: 700px;
+  padding-bottom: 10px;
+}
+.section-container-hot-sale .section_hot-sale .form-label {
+  font-size: 1.5rem;
 }
 @media (max-width: 919px) {
   .section-container-hot-sale .section_hot-sale {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding: auto;
   }
 }
 
-/*============  End of HOT SALE  =============*//*# sourceMappingURL=styles.css.map */
+/*============  End of BUSQUEDA HOT SALE  =============*/
+#cartas-grid .card {
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+#cartas-grid .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  max-height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.card-footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+}
+.btn-primary:hover {
+  background-color: #0062cc;
+}
+
+/*============  CONTÁCTANOS HOT SALE  =============*/
+.contactanos-hot-sale {
+  background-color: #46729e;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.contactanos-hot-sale label, .contactanos-hot-sale input, .contactanos-hot-sale textarea, .contactanos-hot-sale button {
+  margin: 5px;
+  border-radius: 4px;
+  border: none;
+}
+.contactanos-hot-sale .input-email {
+  margin-left: 20px;
+}
+.contactanos-hot-sale .texto-contactanos {
+  margin-left: 68px;
+  width: 198px;
+  margin-bottom: 5px;
+}
+.contactanos-hot-sale .button-contactanos {
+  width: 300px;
+}
+.contactanos-hot-sale .button-contactanos:hover {
+  background-color: #82b0df;
+}
+
+/*============  FIN CONTÁCTANOS HOT SALE  =============*/
+/*============  FIN HOT SALE  =============*//*# sourceMappingURL=styles.css.map */
