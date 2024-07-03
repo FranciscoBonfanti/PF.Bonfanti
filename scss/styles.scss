@@ -7,14 +7,15 @@ $font-family: Arial, sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     background-color: $background-color;
     color: $font-color;
     font-family: $font-family;
-    height: 100vh;
-
+    height: auto;
+    overflow-y: auto;
 }
 @media(max-width: 991px) {
     .sidebar {
