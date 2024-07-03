@@ -12387,6 +12387,14 @@ body {
 /*============  FIN CONTÁCTANOS HOT SALE  =============*/
 /*============  FIN HOT SALE  =============*/
 /*============  INICIO ARMA TU PC  =============*/
+.arma-tu-pc {
+  font-size: 2.5rem;
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*----- VARIABLES -----*/
 /*----- ESTILOS GENERALES -----*/
 .container-cartas {
@@ -12396,7 +12404,7 @@ body {
   gap: 20px;
   width: 90%;
   max-width: 1200px;
-  margin-top: 70px;
+  margin-top: 20px;
 }
 
 /*----- ESTILOS PARA LAS CARTAS -----*/
