@@ -12118,37 +12118,6 @@ body {
 }
 
 /*----- FIN IMG LOCAL INDEX-------*/
-/*=============================================
-=                   Section main                  =
-=============================================*/
-.section_main {
-  background-color: #1d1c1c;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: auto;
-  height: auto;
-  margin-top: 55px;
-}
-.section_main .container {
-  width: 100%;
-  height: auto;
-  background-color: #1d1c1c;
-}
-.section_main .container .navbar {
-  width: 100%;
-  height: auto;
-}
-.section_main .container .navbar .form-inline {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-/*============  End of Section main  =============*/
 /**********FORMULARIO INICIO SESION***************/
 .div-formulario {
   width: 90%;
@@ -12284,9 +12253,7 @@ body {
   align-items: center;
 }
 
-/*=============================================
-=              BUSQUEDA HOT SALE              =
-=============================================*/
+/*============  BUSQUEDA HOT SALE  =============*/
 .section-container-hot-sale {
   display: flex;
   flex-direction: column;
@@ -12341,7 +12308,8 @@ body {
   }
 }
 
-/*============  End of BUSQUEDA HOT SALE  =============*/
+/*============  FIN BUSQUEDA HOT SALE  =============*/
+/*============  CARTAS COMPRAS HOT SALE  =============*/
 #cartas-grid .card {
   border: 1px solid #ced4da;
   border-radius: 0.5rem;
@@ -12385,6 +12353,7 @@ body {
   background-color: #0062cc;
 }
 
+/*============ FIN CARTAS COMPRAS HOT SALE  =============*/
 /*============  CONTÁCTANOS HOT SALE  =============*/
 .contactanos-hot-sale {
   background-color: #46729e;
@@ -12415,4 +12384,6 @@ body {
 }
 
 /*============  FIN CONTÁCTANOS HOT SALE  =============*/
-/*============  FIN HOT SALE  =============*//*# sourceMappingURL=styles.css.map */
+/*============  FIN HOT SALE  =============*/
+/*============  INICIO ARMA TU PC  =============*/
+/*============  FIN ARMA TU PC  =============*//*# sourceMappingURL=styles.css.map */

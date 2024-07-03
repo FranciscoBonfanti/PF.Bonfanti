@@ -167,39 +167,6 @@ body {
 /*----- FIN IMG LOCAL INDEX-------*/
 
 
-/*=============================================
-=                   Section main                  =
-=============================================*/
-.section_main {
-  background-color: $background-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: auto;
-  height: auto;
-  margin-top: 55px;
-  .container {
-    width: 100%;
-    height: auto;
-    background-color: $background-color;
-
-    .navbar {
-      width: 100%;
-      height: auto;
-
-      .form-inline {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-      }
-    }
-  }
-}
-
-/*============  End of Section main  =============*/
 
 /**********FORMULARIO INICIO SESION***************/
 .div-formulario {
@@ -332,10 +299,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-/*=============================================
-=              BUSQUEDA HOT SALE              =
-=============================================*/
 
+/*============  BUSQUEDA HOT SALE  =============*/
 .section-container-hot-sale{
     display: flex;
     flex-direction: column;
@@ -394,7 +359,9 @@ body {
 
 }
 
-/*============  End of BUSQUEDA HOT SALE  =============*/
+/*============  FIN BUSQUEDA HOT SALE  =============*/
+
+/*============  CARTAS COMPRAS HOT SALE  =============*/
 #cartas-grid .card {
     border: 1px solid #ced4da;
     border-radius: 0.5rem;
@@ -438,6 +405,7 @@ body {
         background-color: darken(#007bff, 10%);
     }
 }
+/*============ FIN CARTAS COMPRAS HOT SALE  =============*/
 
 /*============  CONTÁCTANOS HOT SALE  =============*/
 .contactanos-hot-sale{
@@ -468,9 +436,15 @@ body {
         background-color: #82b0df;
     }
 }
-
-
 /*============  FIN CONTÁCTANOS HOT SALE  =============*/
 
-
 /*============  FIN HOT SALE  =============*/
+
+
+/*============  INICIO ARMA TU PC  =============*/
+
+
+
+
+
+/*============  FIN ARMA TU PC  =============*/
