@@ -1,85 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hard Code</title>
-    <link rel="stylesheet" href="../scss/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hard Code</title>
+  <!-- etiquetas -->
+  <meta name="keywords" content="Venta de Hardware">
+  <meta name="description" content="Hard Code es una página de venta de Hardware">
+  <meta name="author" content="Francisco Bonfanti">
+
+  <!-- metaetiquetas redes sociales -->
+  <meta property="og:title" content="Francisco Bonfanti página CODERHOUSE">
+  <meta property="og:description" content="Ésta es una página donde puedes comprar todo tipo de electrónica">
+  <!-- <meta property="og:image" content="./img"> -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="../scss/styles.css">
 </head>
+
 <body class="vh-100 overflow-hidden">
-    <header>
-      <!-- INICIO NAV-BAR -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
-        <div class="container">
-          <!--LOGO-->
-          <a class="navbar-brand fs-4" href="../index.html">Hard Code</a>
-          <!--BOTON DE MENU-->
-          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!--SIDEBAR-->
-          <div class=" sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel">
-            <!--SIDEBAR HEADER-->
-            <div class="offcanvas-header text-white border-bottom">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HARD CODE</h5>
-              <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
-                aria-label="Close">
-              </button>
-            </div>
-            <!--SIDEBAR BODY-->
-            <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
-              <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
-                <li class="nav-item mx-2">
-                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="#">Hot Sale</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="./arma-tu-pc.html">Arma tu pc</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="./contacto.html">Contacto</a>
-                </li>
-              </ul>
-              <!--INICIAR SESION / REGISTRARSE-->
-              <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
-                <a href="./inicio-sesion.html" class="text-white text-decoration-none">Iniciar Sesion</a>
-                <a href="registrate" class="text-white text-decoration-none px-3 py-1 rounded-4"
-                  style="background-color: #f94ca4;">Registrate</a>
-              </div>
+  <header>
+    <!-- INICIO NAV-BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+      <div class="container">
+        <!--LOGO-->
+        <a class="navbar-brand fs-4" href="../index.html">Hard Code</a>
+        <!--BOTON DE MENU-->
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--SIDEBAR-->
+        <div class=" sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <!--SIDEBAR HEADER-->
+          <div class="offcanvas-header text-white border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HARD CODE</h5>
+            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+              aria-label="Close">
+            </button>
+          </div>
+          <!--SIDEBAR BODY-->
+          <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+            <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Hot Sale</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./arma-tu-pc.html">Arma tu pc</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <!--INICIAR SESION / REGISTRARSE-->
+            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+              <a href="./inicio-sesion.html" class="text-white text-decoration-none">Iniciar Sesion</a>
+              <a href="registrate" class="text-white text-decoration-none px-3 py-1 rounded-4"
+                style="background-color: #f94ca4;">Registrate</a>
             </div>
           </div>
         </div>
-      </nav>
-      <!-- FIN NAV-BAR-->
-    </header>
-    <main>
-      <section class="section_main">
-        <div class="container">
-          <nav class="navbar navbar-dark bg-dark">
-            <form class="form-inline">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </nav>
-          <div class="container mt-5">
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                    Selecciona una opción
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href="#">Opción 1</a></li>
-                    <li><a class="dropdown-item" href="#">Opción 2</a></li>
-                    <li><a class="dropdown-item" href="#">Opción 3</a></li>
-                </ul>
-            </div>
-        </div>
+      </div>
+    </nav>
+    <!-- FIN NAV-BAR-->
+  </header>
+  <main>
+    <section class="h1-hot-sale">
+      <h1 class="animate__animated animate__backInDown">¡HOT SALE!</h1>
+    </section>
+    <section class="section-container-hot-sale">
+      <section>
+        <div class="container-buscar">
+          <h5>Busca Tu producto</h5>
+          <input type="text" class="">
+          <button type="button">Buscar</button>
         </div>
       </section>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <section class="section_hot-sale">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <label for="perifericos" class="form-label">Periféricos:</label>
+              <select class="form-select" id="perifericos">
+                <option value="teclado">Teclado</option>
+                <option value="raton">Ratón</option>
+                <option value="monitor">Monitor</option>
+                <option value="altavoces">Altavoces</option>
+                <option value="microfono">Micrófono</option>
+                <option value="webcam">Webcam</option>
+                <option value="auriculares">Auriculares</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <label for="PcEscritorio" class="form-label">PC escritorio:</label>
+              <select class="form-select" id="PcEscritorio">
+                <option value="teclado">Gabinete</option>
+                <option value="raton">Mother</option>
+                <option value="monitor">Procesador</option>
+                <option value="altavoces">RAM</option>
+                <option value="microfono">Fuente</option>
+                <option value="webcam">Placa de Video</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <label for="consolas" class="form-label">Consolas:</label>
+              <select class="form-select" id="consolas">
+                <option value="teclado">Xbox</option>
+                <option value="raton">Ps</option>
+                <option value="monitor">Nintendo</option>
+                <option value="altavoces">Notebooks</option>
+                <option value="microfono">Tablets</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+  <!--script bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
