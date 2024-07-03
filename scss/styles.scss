@@ -7,7 +7,6 @@ $font-family: Arial, sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
 }
 
 body {
@@ -55,8 +54,8 @@ body {
     background-color: $background-color;
     color: $font-color;
     font-family: $font-family;
-    height: auto;
-    overflow-y: auto;
+    height: 100%; /* Asegúrate de que el cuerpo ocupe todo el alto disponible */
+    overflow-y: scroll; /* Permite el desplazamiento vertical */
 }
 
 @media (max-width: 991px) {
@@ -66,13 +65,13 @@ body {
     }
 }
 
-/*-----CARRUSEL INDEX-------*/
+/* Carrusel */
 .carousel {
     margin-top: 55px;
 }
 /*-----FIN CARRUSEL INDEX-------*/
 
-/*-----H1 INDEX-------*/
+/* H1 de la página principal */
 .h1-index {
     font-size: 2.5rem;
     display: flex;
@@ -81,7 +80,7 @@ body {
 }
 /*-----FIN H1 INDEX-------*/
 
-/*-----CARTAS INDEX-------*/
+/* Cartas */
 .container_cartas {
     display: flex;
     flex-wrap: wrap;
@@ -100,13 +99,13 @@ body {
         display: flex;
         justify-content: center; 
         align-items: center;
-        
+
         img {
             width: 100%; 
             height: auto; 
             border-radius: 4px;
             transition: transform 0.3s;
-            
+
             &:hover {
                 transform: scale(1.05); 
             }
@@ -138,17 +137,28 @@ body {
 }
 /*-----FIN CARTAS INDEX-------*/
 
-/*-----CARTAS PRODUCTOS INDEX-------*/
+/* Cartas de productos */
 .cartas-productos {
     background-color: #b3b3b3;
     display: flex;
-    margin: 30px auto;
+    flex-wrap: wrap;
     justify-content: center;
     width: 70%;
+    margin: 30px auto;
     align-items: center;
     border-radius: 4px;
 
     .card {
         margin: 10px;
+        width: calc(100% / 4 - 20px);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        
+        @media (max-width: 992px) {
+            width: calc(100% / 2 - 20px);
+        }
+        
+        @media (max-width: 576px) {
+            width: 100%;
+        }
     }
 }
