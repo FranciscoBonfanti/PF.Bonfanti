@@ -40,18 +40,61 @@ body {
 /*-----FIN H1 INDEX-------*/
 
 /*-----CARTAS INDEX-------*/
-.container_cartas{
-    background-color: #b3b3b3;
+.container_cartas {
+    
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    width: 60%;
+    padding: 10px;
     margin: 0 auto;
     border-radius: 4px;
 
-    .cartas-ind{
+    .cartas-ind {
         padding: 15px;
+        flex: 1 1 200px; 
+        max-width: 300px; 
+        background-color: #b3b3b3;
+        
+        img {
+            width: 100%; 
+            height: auto; 
+            border-radius: 4px;
+            transition: transform 0.3s;
+            
+            
+            &:hover {
+                transform: scale(1.05); 
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .cartas-ind {
+            flex: 1 1 150px;
+            justify-content: center;
+        }
+    }
+    @media(max-width: 1200px){
+        .container_cartas {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    @media (max-width: 768px) {
+        .cartas-ind {
+            flex: 1 1 100px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        flex-direction: column;
+        .cartas-ind {
+            flex: 1 1 auto;
+            margin-bottom: 15px; 
+        }
     }
 }
+
 /*-----FIN CARTAS INDEX-------*/
 
 /*-----CARTAS PROCUSCTOS INDEX-------*/
