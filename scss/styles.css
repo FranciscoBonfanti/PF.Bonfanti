@@ -12118,6 +12118,7 @@ body {
 }
 
 /*----- FIN IMG LOCAL INDEX-------*/
+/**********FIN INDEX***************/
 /**********FORMULARIO INICIO SESION***************/
 .div-formulario {
   width: 90%;
@@ -12386,4 +12387,124 @@ body {
 /*============  FIN CONTÁCTANOS HOT SALE  =============*/
 /*============  FIN HOT SALE  =============*/
 /*============  INICIO ARMA TU PC  =============*/
+/*----- VARIABLES -----*/
+/*----- ESTILOS GENERALES -----*/
+.container-cartas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 70px;
+}
+
+/*----- ESTILOS PARA LAS CARTAS -----*/
+.card {
+  position: relative;
+  width: 45%;
+  min-width: 300px;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+.card.animate {
+  animation: fadeInUp 0.5s ease forwards;
+}
+.card .card-img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+.card .card-img:hover {
+  transform: scale(1.1);
+}
+.card .card-content {
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInContent 0.5s ease forwards;
+  animation-delay: 0.5s;
+}
+.card .card-title {
+  font-size: 2rem;
+  color: #3498db;
+  margin-bottom: 15px;
+}
+.card .card-description {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+.card .card-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+.card .card-button:hover {
+  background-color: #2ecc71;
+  transform: translateY(-3px);
+}
+
+/*----- ANIMACIONES -----*/
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+/*=============================================
+=               información                   =
+=============================================*/
+.container-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  align-items: center;
+  margin-top: 50px;
+}
+.container-info .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  justify-content: start;
+}
+.container-info .img-info {
+  margin-left: 50px;
+}
+
+/*============  fin información  =============*/
 /*============  FIN ARMA TU PC  =============*//*# sourceMappingURL=styles.css.map */
