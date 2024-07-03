@@ -39,28 +39,73 @@ body {
 }
 /*-----FIN H1 INDEX-------*/
 
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$background-color: #1d1c1c;
+$font-color: white;
+$font-family: Arial, sans-serif;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $background-color;
+    color: $font-color;
+    font-family: $font-family;
+    height: auto;
+    overflow-y: auto;
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+}
+
+/*-----CARRUSEL INDEX-------*/
+.carousel {
+    margin-top: 55px;
+}
+/*-----FIN CARRUSEL INDEX-------*/
+
+/*-----H1 INDEX-------*/
+.h1-index {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+/*-----FIN H1 INDEX-------*/
+
 /*-----CARTAS INDEX-------*/
 .container_cartas {
-    
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; 
+    align-items: center; 
     padding: 10px;
     margin: 0 auto;
     border-radius: 4px;
+    max-width: 1200px;
 
     .cartas-ind {
         padding: 15px;
         flex: 1 1 200px; 
         max-width: 300px; 
         background-color: #b3b3b3;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
         
         img {
             width: 100%; 
             height: auto; 
             border-radius: 4px;
             transition: transform 0.3s;
-            
             
             &:hover {
                 transform: scale(1.05); 
@@ -74,12 +119,7 @@ body {
             justify-content: center;
         }
     }
-    @media(max-width: 1200px){
-        .container_cartas {
-            display: flex;
-            justify-content: center;
-        }
-    }
+
     @media (max-width: 768px) {
         .cartas-ind {
             flex: 1 1 100px;
@@ -88,17 +128,18 @@ body {
 
     @media (max-width: 576px) {
         flex-direction: column;
+        align-items: center; 
         .cartas-ind {
             flex: 1 1 auto;
             margin-bottom: 15px; 
+            max-width: none; 
         }
     }
 }
-
 /*-----FIN CARTAS INDEX-------*/
 
-/*-----CARTAS PROCUSCTOS INDEX-------*/
-.cartas-productos{
+/*-----CARTAS PRODUCTOS INDEX-------*/
+.cartas-productos {
     background-color: #b3b3b3;
     display: flex;
     margin: 30px auto;
@@ -107,7 +148,7 @@ body {
     align-items: center;
     border-radius: 4px;
 
-    .card{
+    .card {
         margin: 10px;
     }
 }
