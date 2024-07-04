@@ -1,6 +1,10 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-$background-color: #1d1c1c;
+$background-color: #292c3e;
+$color-primario:#1c1f30;
+$color-secundario:#222432;
+$color-verde:#eaff6a;
+$color-verde-hover:#c9d86d;
 $font-color: white;
 $font-family: Arial, sans-serif;
 
@@ -41,6 +45,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  color: $color-verde;
 }
 /*-----FIN H1 INDEX-------*/
 
@@ -54,6 +59,7 @@ body {
   margin: 0 auto;
   border-radius: 4px;
   max-width: 1200px;
+  background-color: $color-primario;
 
   .cartas-ind {
     padding: 15px;
@@ -105,7 +111,7 @@ body {
 
 /*-----CARTAS PRODUCTOS INDEX-------*/
 .cartas-productos {
-  background-color: #b3b3b3;
+  background-color: $color-primario;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -121,6 +127,7 @@ body {
     margin: 10px;
     width: calc(100% / 4 - 20px);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: $color-secundario;
 
     @media (max-width: 992px) {
       width: calc(100% / 2 - 20px);
@@ -133,7 +140,16 @@ body {
         transform: scale(1.05);
         box-shadow: 0 8px 16px rgba(236, 227, 227, 0.459);
     }
-
+    .card-title{
+      color: $color-verde;
+    }
+    .card-text{
+      color: white;
+    }
+    .btn-primary{
+      background-color: $color-verde;
+      color: black;
+    }
   }
 }
 /*----- FIN CARTAS PRODUCTOS INDEX-------*/
