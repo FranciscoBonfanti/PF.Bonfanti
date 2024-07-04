@@ -188,65 +188,67 @@ $link-color: $primary-color;
 
 /* Contenedor del formulario */
 .register-container {
-    background-color: transparent;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    max-width: 400px;
-    width: 100%;
-    margin-top: 100px;
-    border: 2px solid white;
-}
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 100px;
+  border: 2px solid white;
 
-/* Título del formulario */
-.register-form h2 {
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
-}
+  /* Título del formulario */
+  .register-form h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  }
 
-/* Grupo de entrada */
+  /* Grupo de entrada */
 .input-group {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 
-    label {
-        display: block;
-        margin-bottom: 5px;
-        color: white;
-    }
+  label {
+      display: block;
+      margin-bottom: 5px;
+      color: white;
+  }
 
-    input {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid $input-border-color;
-        border-radius: 4px;
-        box-sizing: border-box;
-        background-color: $input-bg-color;
-        color: $text-color;
+  input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid $input-border-color;
+      border-radius: 4px;
+      box-sizing: border-box;
+      background-color: $input-bg-color;
+      color: $text-color;
 
-        &:focus {
-            border-color: $primary-color;
-            outline: none;
-        }
-    }
+      &:focus {
+          border-color: $primary-color;
+          outline: none;
+      }
+  }
+
+  
 }
-
+}
 /* Botón de registro */
 .register-btn {
-    background-color: $button-bg-color;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: $button-bg-color;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 
-    &:hover {
-        background-color: $button-bg-hover;
-    }
+  &:hover {
+      background-color: $button-bg-hover;
+  }
 }
+
 
 /**********FIN FORMULARIO INICIO SESION***************/
 
@@ -426,7 +428,6 @@ $transition-duration: 0.5s;
   justify-content: center;
   gap: 20px;
   width: 90%;
-  max-width: 1200px;
   margin: 20px;
 }
 
@@ -539,7 +540,7 @@ $transition-duration: 0.5s;
     margin-top: 70px;
     align-items: center;
     margin-top: 50px;
-
+    margin-bottom: 50px;
     .info{
         display: flex;
         flex-direction: column;
@@ -581,7 +582,10 @@ $transition-duration: 0.5s;
     justify-content: center;
     padding-bottom: 75px;
     gap: 1rem;
-
+    
+    a img:hover {
+      transform: scale(1.10);
+    }
     .img-contacto {
       width: 100px;
       padding: 10px;

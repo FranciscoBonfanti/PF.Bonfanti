@@ -12135,25 +12135,23 @@ body {
   width: 100%;
   margin-top: 100px;
   border: 2px solid white;
+  /* Título del formulario */
+  /* Grupo de entrada */
 }
-
-/* Título del formulario */
-.register-form h2, .register-form .h2 {
+.register-container .register-form h2, .register-container .register-form .h2 {
   text-align: center;
   color: white;
   margin-bottom: 20px;
 }
-
-/* Grupo de entrada */
-.input-group {
+.register-container .input-group {
   margin-bottom: 15px;
 }
-.input-group label {
+.register-container .input-group label {
   display: block;
   margin-bottom: 5px;
   color: white;
 }
-.input-group input {
+.register-container .input-group input {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -12162,7 +12160,7 @@ body {
   background-color: #fff;
   color: #333;
 }
-.input-group input:focus {
+.register-container .input-group input:focus {
   border-color: #3498db;
   outline: none;
 }
@@ -12343,7 +12341,6 @@ body {
   justify-content: center;
   gap: 20px;
   width: 90%;
-  max-width: 1200px;
   margin: 20px;
 }
 
@@ -12443,6 +12440,7 @@ body {
   margin-top: 70px;
   align-items: center;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 .container-info .info {
   display: flex;
@@ -12478,6 +12476,9 @@ body {
   justify-content: center;
   padding-bottom: 75px;
   gap: 1rem;
+}
+.info-contacto .redes a img:hover {
+  transform: scale(1.1);
 }
 .info-contacto .redes .img-contacto {
   width: 100px;
