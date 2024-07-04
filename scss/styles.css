@@ -12296,12 +12296,13 @@ body {
 /*============ FIN CARTAS COMPRAS HOT SALE  =============*/
 /*============  CONTÁCTANOS HOT SALE  =============*/
 .contactanos-hot-sale {
-  background-color: #46729e;
+  background-color: #333;
   margin-top: 50px;
   margin-bottom: 20px;
   height: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .contactanos-hot-sale label, .contactanos-hot-sale input, .contactanos-hot-sale textarea, .contactanos-hot-sale button {
   margin: 5px;
@@ -12492,8 +12493,7 @@ body {
   color: #fff;
   padding: 20px 0;
 }
-
-.footer-container {
+.site-footer .footer-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -12501,44 +12501,36 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
-
-.footer-section {
+.site-footer .footer-container .footer-section {
   flex: 1;
   min-width: 200px;
   margin: 20px 0;
 }
-
-.footer-section h3, .footer-section .h3 {
+.site-footer .footer-container .footer-section h3, .site-footer .footer-container .footer-section .h3 {
   margin-bottom: 10px;
   font-size: 18px;
   color: #f4f4f4;
 }
-
-.footer-section p, .footer-section ul {
+.site-footer .footer-container .footer-section p, .site-footer .footer-container .footer-section ul {
   margin: 5px 0;
   color: #ccc;
 }
-
-.footer-section ul {
+.site-footer .footer-container .footer-section ul {
   list-style: none;
   padding: 0;
 }
-
-.footer-section ul li {
+.site-footer .footer-container .footer-section ul li {
   margin: 5px 0;
 }
-
-.footer-section ul li a {
+.site-footer .footer-container .footer-section ul li a {
   color: #ccc;
   text-decoration: none;
   transition: color 0.3s;
 }
-
-.footer-section ul li a:hover {
+.site-footer .footer-container .footer-section ul li a:hover {
   color: #fff;
 }
-
-.footer-bottom {
+.site-footer .footer-bottom {
   text-align: center;
   padding: 10px 0;
   border-top: 1px solid #444;
@@ -12546,22 +12538,18 @@ body {
   font-size: 14px;
 }
 
-/* Estilos para los enlaces de redes sociales */
 .redes-links {
   display: flex;
   flex-direction: column;
 }
-
 .redes-links li {
   margin-right: 10px;
 }
-
 .redes-links li a {
   color: #ccc;
   text-decoration: none;
   transition: color 0.3s;
 }
-
 .redes-links li a:hover {
   color: #fff;
 }
