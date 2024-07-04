@@ -12022,6 +12022,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
+  margin: 10px;
 }
 .container_cartas .cartas-ind img {
   width: 100%;
@@ -12029,8 +12031,9 @@ body {
   border-radius: 4px;
   transition: transform 0.3s;
 }
-.container_cartas .cartas-ind img:hover {
+.container_cartas .cartas-ind:hover {
   transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(236, 227, 227, 0.459);
 }
 @media (max-width: 1200px) {
   .container_cartas .cartas-ind {
@@ -12120,128 +12123,64 @@ body {
 /*----- FIN IMG LOCAL INDEX-------*/
 /**********FIN INDEX***************/
 /**********FORMULARIO INICIO SESION***************/
-.div-formulario {
-  width: 90%;
-  max-width: 700px;
-  background-color: rgba(226, 0, 0, 0);
-  color: white;
-  border-radius: 10px;
-  padding: 30px;
-  border: 1px solid #fff;
-  margin: 4rem auto;
+/* Contenedor del formulario */
+.register-container {
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 100px;
+  border: 2px solid white;
 }
 
-.div-formulario h1, .div-formulario .h1 {
-  font-size: 1.5rem;
+/* Título del formulario */
+.register-form h2, .register-form .h2 {
   text-align: center;
+  color: white;
+  margin-bottom: 20px;
 }
 
-.div-formulario .div-input {
-  position: relative;
+/* Grupo de entrada */
+.input-group {
+  margin-bottom: 15px;
+}
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+.input-group input {
   width: 100%;
-  height: 50px;
-  margin: 30px 0;
-}
-
-.div-input input {
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  border: none;
-  outline: none;
-  border: 2px solid rgb(20, 241, 223);
-  border-radius: 40px;
-  font-size: 20px;
-  color: white;
-  padding: 0 45px 0 20px;
-}
-
-.div-input input::-moz-placeholder {
-  color: white;
-}
-
-.div-input input::placeholder {
-  color: white;
-}
-
-.div-input i {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 20px;
-}
-
-.div-formulario .recuerdame {
-  display: flex;
-  justify-content: space-between;
-  font-size: 15px;
-  margin: -15px 0 15px;
-}
-
-.recuerdame label input {
-  accent-color: #fff;
-  margin-right: 3px;
-}
-
-.recuerdame a {
-  color: white;
-  text-decoration: none;
-}
-
-.recuerdame a:hover {
-  text-decoration: underline;
-}
-
-.div-formulario .button-login {
-  width: 100%;
-  height: 40px;
-  background-color: white;
-  border: none;
-  outline: none;
-  border-radius: 40px;
-  box-shadow: rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fff;
   color: #333;
-  font-weight: 600;
-  transition: background-color 0.3s;
+}
+.input-group input:focus {
+  border-color: #3498db;
+  outline: none;
 }
 
-.div-formulario .button-login:hover {
-  background-color: #f0f0f0;
-}
-
-.div-formulario .registrate {
-  font-size: 15px;
+/* Botón de registro */
+.register-btn {
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px;
   text-align: center;
-  margin-top: 20px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.register-btn:hover {
+  background-color: #2980b9;
 }
 
-.registrate p a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.registrate p a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 600px) {
-  .div-formulario {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .boton-armaPC a {
-    font-size: 1.2rem;
-  }
-}
-@media (max-width: 650px) {
-  .div-formulario {
-    margin: 4rem auto;
-  }
-}
 /**********FIN FORMULARIO INICIO SESION***************/
 /*=============================================
 =                   HOT SALE                   =
@@ -12324,9 +12263,7 @@ body {
 .card-img-top {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
-  max-height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: auto;
 }
 
 .card-body {
@@ -12404,7 +12341,7 @@ body {
   gap: 20px;
   width: 90%;
   max-width: 1200px;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 /*----- ESTILOS PARA LAS CARTAS -----*/
@@ -12515,4 +12452,33 @@ body {
 }
 
 /*============  fin información  =============*/
-/*============  FIN ARMA TU PC  =============*//*# sourceMappingURL=styles.css.map */
+/*============  FIN ARMA TU PC  =============*/
+/*=============================================
+=                MAIN CONTACTO                =
+=============================================*/
+.info-contacto {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.info-contacto .h1-contacto {
+  font-size: 2.5rem;
+  margin-top: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-contacto .redes {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 75px;
+  gap: 1rem;
+}
+.info-contacto .redes .img-contacto {
+  width: 100px;
+  padding: 10px;
+}
+
+/*============  FIN MAIN CONTACTO  =============*//*# sourceMappingURL=styles.css.map */
