@@ -1,4 +1,5 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
 
 $background-color: #292c3e;
 $color-primario:#1c1f30;
@@ -41,11 +42,13 @@ body {
 
 /* H1 INDEX */
 .h1-index {
-  font-size: 2.5rem;
+  font-size: 4rem;
   display: flex;
   justify-content: center;
   margin-top: 30px;
   color: $color-verde;
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
 }
 /*-----FIN H1 INDEX-------*/
 
@@ -71,6 +74,7 @@ body {
     align-items: center;
     border-radius: 5px;
     margin: 10px;
+    transition: 0.5s;
 
     img {
       width: 100%;
@@ -128,6 +132,7 @@ body {
     width: calc(100% / 4 - 20px);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     background-color: $color-secundario;
+    transition: 0.5s;
 
     @media (max-width: 992px) {
       width: calc(100% / 2 - 20px);
@@ -219,10 +224,12 @@ $link-color: $primary-color;
   }
 
   /* Título del formulario */
-  .register-form h2 {
+  .register-form h1 {
   text-align: center;
   color: $color-verde;
   margin-bottom: 20px;
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
   }
 
   /* Grupo de entrada */
@@ -278,12 +285,14 @@ $link-color: $primary-color;
 =                   HOT SALE                   =
 =============================================*/
 .h1-hot-sale {
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-top: 65px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: $color-verde;
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
 }
 
 /*============  BUSQUEDA HOT SALE  =============*/
@@ -453,6 +462,9 @@ $transition-duration: 0.5s;
 /*----- ESTILOS GENERALES -----*/
 .arma-tu-pc{
   color: $color-verde;
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
 }
 .container-cartas {
   display: flex;
@@ -558,7 +570,7 @@ $transition-duration: 0.5s;
 }
 
 @media (max-width: 768px) {
-  .card {
+  .carta {
     width: 100%;
   }
 }
@@ -605,12 +617,14 @@ $transition-duration: 0.5s;
   gap: 1rem;
 
   .h1-contacto {
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin-top: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: $color-verde;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
   }
   .h2-info{
     color: $color-verde;
