@@ -12145,7 +12145,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 40px;
   width: 500px;
-  border: 2px solid white;
+  border: 2px solid #eaff6a;
   margin: 50px auto;
   margin-top: 100px;
   /* Título del formulario */
@@ -12159,7 +12159,7 @@ body {
 }
 .register-container .register-form h2, .register-container .register-form .h2 {
   text-align: center;
-  color: white;
+  color: #eaff6a;
   margin-bottom: 20px;
 }
 .register-container .input-group {
@@ -12186,10 +12186,10 @@ body {
 
 /* Botón de registro */
 .register-btn {
-  background-color: #3498db;
+  background-color: #eaff6a;
   border: none;
   border-radius: 4px;
-  color: #fff;
+  color: #1c1f30;
   padding: 10px;
   text-align: center;
   width: 100%;
@@ -12198,6 +12198,7 @@ body {
 }
 .register-btn:hover {
   background-color: #2980b9;
+  background-color: #c9d86d;
 }
 
 /**********FIN FORMULARIO INICIO SESION***************/
@@ -12210,6 +12211,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #eaff6a;
 }
 
 /*============  BUSQUEDA HOT SALE  =============*/
@@ -12240,14 +12242,14 @@ body {
   display: inline-flex;
   outline: 0;
   border-radius: 4px;
-  background-color: aquamarine;
+  background-color: #eaff6a;
   margin-top: 8px;
   width: 80px;
   display: flex;
   justify-content: center;
 }
 .section-container-hot-sale .section_hot-sale {
-  background-color: #292626;
+  background-color: #1c1f30;
   display: flex;
   align-items: center;
   text-align: center;
@@ -12270,13 +12272,17 @@ body {
 /*============  FIN BUSQUEDA HOT SALE  =============*/
 /*============  CARTAS COMPRAS HOT SALE  =============*/
 #cartas-grid .card {
-  border: 1px solid #ced4da;
+  border: 1px solid #eaff6a;
   border-radius: 0.5rem;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 #cartas-grid .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+#cartas-grid .card .card-titulo {
+  font-size: 1.7rem;
+  font-weight: 700;
 }
 
 .card-img-top {
@@ -12300,20 +12306,22 @@ body {
 }
 
 .btn-primary {
-  background-color: #007bff;
+  background-color: #eaff6a;
   border: none;
   padding: 0.7rem 1rem;
   font-size: 1rem;
   border-radius: 0.25rem;
+  color: #1c1f30;
+  font-weight: 600;
 }
 .btn-primary:hover {
-  background-color: #0062cc;
+  background-color: #bacd45;
 }
 
 /*============ FIN CARTAS COMPRAS HOT SALE  =============*/
 /*============  CONTÁCTANOS HOT SALE  =============*/
 .contactanos-hot-sale {
-  background-color: #333;
+  background-color: #1c1f30;
   margin-top: 50px;
   margin-bottom: 20px;
   height: auto;
@@ -12336,9 +12344,10 @@ body {
 }
 .contactanos-hot-sale .button-contactanos {
   width: 300px;
+  background-color: #eaff6a;
 }
 .contactanos-hot-sale .button-contactanos:hover {
-  background-color: #82b0df;
+  background-color: #c9d86d;
 }
 
 /*============  FIN CONTÁCTANOS HOT SALE  =============*/
@@ -12354,6 +12363,10 @@ body {
 
 /*----- VARIABLES -----*/
 /*----- ESTILOS GENERALES -----*/
+.arma-tu-pc {
+  color: #eaff6a;
+}
+
 .container-cartas {
   display: flex;
   flex-wrap: wrap;
@@ -12364,63 +12377,63 @@ body {
 }
 
 /*----- ESTILOS PARA LAS CARTAS -----*/
-.card {
+.carta {
   position: relative;
   width: 45%;
   min-width: 300px;
   max-width: 600px;
-  background: #fff;
+  background: #1c1f30;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.5s ease, transform 0.5s ease;
 }
-.card:hover {
+.carta:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   transform: scale(1.05);
 }
-.card.animate {
+.carta.animate {
   animation: fadeInUp 0.5s ease forwards;
 }
-.card .card-img {
+.carta .card-img {
   width: 100%;
   height: auto;
   transition: transform 0.5s ease;
 }
-.card .card-img:hover {
+.carta .card-img:hover {
   transform: scale(1.1);
 }
-.card .card-content {
+.carta .card-content {
   padding: 20px;
   text-align: center;
   opacity: 0;
   animation: fadeInContent 0.5s ease forwards;
   animation-delay: 0.5s;
 }
-.card .card-title {
+.carta .card-title {
   font-size: 2rem;
-  color: #3498db;
+  color: #eaff6a;
   margin-bottom: 15px;
 }
-.card .card-description {
+.carta .card-description {
   font-size: 1rem;
   color: #7f8c8d;
   margin-bottom: 20px;
 }
-.card .card-button {
+.carta .card-button {
   display: inline-block;
   padding: 10px 20px;
   font-size: 1rem;
-  color: #fff;
-  background-color: #3498db;
+  color: #1c1f30;
+  background-color: #eaff6a;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.5s ease, transform 0.5s ease;
 }
-.card .card-button:hover {
-  background-color: #2ecc71;
+.carta .card-button:hover {
+  background-color: #c9d86d;
   transform: translateY(-3px);
 }
 
@@ -12467,6 +12480,9 @@ body {
   margin-left: 50px;
   justify-content: start;
 }
+.container-info .info h3, .container-info .info .h3 {
+  color: #eaff6a;
+}
 .container-info .img-info {
   margin-left: 50px;
 }
@@ -12489,6 +12505,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #eaff6a;
+}
+.info-contacto .h2-info {
+  color: #eaff6a;
 }
 .info-contacto .redes {
   display: flex;

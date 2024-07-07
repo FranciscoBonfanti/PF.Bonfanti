@@ -209,7 +209,7 @@ $link-color: $primary-color;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 40px;
   width: 500px;
-  border: 2px solid white;
+  border: 2px solid $color-verde;
   margin:50px auto;
   margin-top: 100px;
 
@@ -221,7 +221,7 @@ $link-color: $primary-color;
   /* Título del formulario */
   .register-form h2 {
   text-align: center;
-  color: white;
+  color: $color-verde;
   margin-bottom: 20px;
   }
 
@@ -255,10 +255,10 @@ $link-color: $primary-color;
 }
 /* Botón de registro */
 .register-btn {
-  background-color: $button-bg-color;
+  background-color: $color-verde;
   border: none;
   border-radius: 4px;
-  color: #fff;
+  color: $color-primario;
   padding: 10px;
   text-align: center;
   width: 100%;
@@ -267,6 +267,7 @@ $link-color: $primary-color;
 
   &:hover {
       background-color: $button-bg-hover;
+      background-color: $color-verde-hover;
   }
 }
 
@@ -282,6 +283,7 @@ $link-color: $primary-color;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: $color-verde;
 }
 
 /*============  BUSQUEDA HOT SALE  =============*/
@@ -312,7 +314,7 @@ $link-color: $primary-color;
             display: inline-flex;
             outline: 0;
             border-radius: 4px;
-            background-color: aquamarine;
+            background-color: $color-verde;
             margin-top: 8px;
             width: 80px;
             display: flex;
@@ -320,7 +322,7 @@ $link-color: $primary-color;
         }
     }
     .section_hot-sale {
-        background-color: #292626;
+        background-color: $color-primario;
         display: flex;
         align-items: center;
         text-align: center;
@@ -346,14 +348,19 @@ $link-color: $primary-color;
 /*============  FIN BUSQUEDA HOT SALE  =============*/
 
 /*============  CARTAS COMPRAS HOT SALE  =============*/
+
 #cartas-grid .card {
-    border: 1px solid #ced4da;
+    border: 1px solid $color-verde;
     border-radius: 0.5rem;
     transition: transform 0.3s, box-shadow 0.3s;
 
     &:hover {
         transform: translateY(-5px);
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+    .card-titulo{
+      font-size: 1.7rem;
+      font-weight: 700;
     }
 }
 
@@ -378,21 +385,23 @@ $link-color: $primary-color;
 }
 
 .btn-primary {
-    background-color: #007bff;
+    background-color: $color-verde;
     border: none;
     padding: 0.7rem 1rem;
     font-size: 1rem;
     border-radius: 0.25rem;
+    color: $color-primario;
+    font-weight: 600;
 
     &:hover {
-        background-color: darken(#007bff, 10%);
+        background-color: darken($color-verde-hover, 10%);
     }
 }
 /*============ FIN CARTAS COMPRAS HOT SALE  =============*/
 
 /*============  CONTÁCTANOS HOT SALE  =============*/
 .contactanos-hot-sale{
-  background-color: #333;
+  background-color: $color-primario;
     margin-top: 50px;
     margin-bottom: 20px;
     height: auto;
@@ -415,9 +424,10 @@ $link-color: $primary-color;
     }
     .button-contactanos{
         width: 300px;
+        background-color: $color-verde;
     }
     .button-contactanos:hover{
-        background-color: #82b0df;
+        background-color: $color-verde-hover;
     }
 }
 /*============  FIN CONTÁCTANOS HOT SALE  =============*/
@@ -435,14 +445,15 @@ $link-color: $primary-color;
 }
 
 /*----- VARIABLES -----*/
-$primary-color: #3498db;
-$secondary-color: #2ecc71;
 $shadow-color: rgba(0, 0, 0, 0.2);
 $hover-shadow-color: rgba(0, 0, 0, 0.3);
 $hover-scale: 1.05;
 $transition-duration: 0.5s;
 
 /*----- ESTILOS GENERALES -----*/
+.arma-tu-pc{
+  color: $color-verde;
+}
 .container-cartas {
   display: flex;
   flex-wrap: wrap;
@@ -453,12 +464,12 @@ $transition-duration: 0.5s;
 }
 
 /*----- ESTILOS PARA LAS CARTAS -----*/
-.card {
+.carta {
   position: relative;
   width: 45%;
   min-width: 300px;
   max-width: 600px;
-  background: #fff;
+  background: $color-primario;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 8px $shadow-color;
@@ -494,7 +505,7 @@ $transition-duration: 0.5s;
 
   .card-title {
     font-size: 2rem;
-    color: $primary-color;
+    color: $color-verde;
     margin-bottom: 15px;
   }
 
@@ -508,8 +519,8 @@ $transition-duration: 0.5s;
     display: inline-block;
     padding: 10px 20px;
     font-size: 1rem;
-    color: #fff;
-    background-color: $primary-color;
+    color: $color-primario;
+    background-color: $color-verde;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -517,7 +528,7 @@ $transition-duration: 0.5s;
     transition: background-color $transition-duration ease, transform $transition-duration ease;
 
     &:hover {
-      background-color: $secondary-color;
+      background-color: $color-verde-hover;
       transform: translateY(-3px);
     }
   }
@@ -567,6 +578,9 @@ $transition-duration: 0.5s;
         flex-direction: column;
         margin-left: 50px;
         justify-content: start;
+        h3{
+          color: $color-verde;
+        }
     }
     .img-info{
         margin-left: 50px;
@@ -596,6 +610,10 @@ $transition-duration: 0.5s;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: $color-verde;
+  }
+  .h2-info{
+    color: $color-verde;
   }
 
   .redes {
