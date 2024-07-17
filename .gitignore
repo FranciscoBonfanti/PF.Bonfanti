@@ -169,7 +169,6 @@ $RECYCLE.BIN/
 
 # Ocultar node_modules y README.md
 node_modules/
-README.md
 package-lock.json
 package.json
 
