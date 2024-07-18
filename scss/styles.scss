@@ -1,7 +1,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
 
-$background-color: #292c3e;
+$background-color: #1c1f30;
 $color-primario:#1c1f30;
 $color-secundario:#222432;
 $color-verde:#eaff6a;
@@ -62,7 +62,7 @@ body {
   margin: 0 auto;
   border-radius: 4px;
   max-width: 1200px;
-  background-color: $color-primario;
+  background-color: $color-secundario;
 
   .cartas-ind {
     padding: 15px;
@@ -560,7 +560,7 @@ $transition-duration: 0.5s;
   width: 45%;
   min-width: 300px;
   max-width: 600px;
-  background: $color-primario;
+  background: $color-secundario;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 8px $shadow-color;

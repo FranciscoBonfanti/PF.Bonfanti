@@ -11973,7 +11973,7 @@ textarea.form-control-lg {
 }
 
 body {
-  background-color: #292c3e;
+  background-color: #1c1f30;
   color: white;
   font-family: Arial, sans-serif;
   height: 100%;
@@ -12019,7 +12019,7 @@ body {
   margin: 0 auto;
   border-radius: 4px;
   max-width: 1200px;
-  background-color: #1c1f30;
+  background-color: #222432;
 }
 .container_cartas .cartas-ind {
   padding: 15px;
@@ -12461,7 +12461,7 @@ body {
   width: 45%;
   min-width: 300px;
   max-width: 600px;
-  background: #1c1f30;
+  background: #222432;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
