@@ -12144,7 +12144,14 @@ body {
 /**********FIN INDEX***************/
 /**********FORMULARIO INICIO SESION***************/
 /* Contenedor del formulario */
-.register-container {
+.main-inicio-sesion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* Botón de registro */
+  /* Botón de registro */
+}
+.main-inicio-sesion .register-container {
   background-color: transparent;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -12157,42 +12164,39 @@ body {
   /* Grupo de entrada */
 }
 @media (max-width: 800px) {
-  .register-container {
+  .main-inicio-sesion .register-container {
     width: auto;
     height: auto;
   }
 }
-.register-container .register-form h1, .register-container .register-form .h1 {
+.main-inicio-sesion .register-container .register-form h1, .main-inicio-sesion .register-container .register-form .h1 {
   text-align: center;
   color: #eaff6a;
   margin-bottom: 20px;
   font-family: "Anton SC", sans-serif;
   font-weight: 400;
 }
-.register-container .input-group {
+.main-inicio-sesion .register-container .input-group {
   margin-bottom: 15px;
 }
-.register-container .input-group label {
+.main-inicio-sesion .register-container .input-group label {
   display: block;
   margin-bottom: 5px;
   color: white;
 }
-.register-container .input-group input {
+.main-inicio-sesion .register-container .input-group input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #eaff6a;
   border-radius: 4px;
   box-sizing: border-box;
-  background-color: #fff;
-  color: #333;
+  background-color: #f4f4f4;
 }
-.register-container .input-group input:focus {
-  border-color: #3498db;
+.main-inicio-sesion .register-container .input-group input:focus {
+  border-color: #c9d86d;
   outline: none;
 }
-
-/* Botón de registro */
-.register-btn {
+.main-inicio-sesion .register-btn {
   background-color: #eaff6a;
   border: none;
   border-radius: 4px;
@@ -12203,8 +12207,71 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.register-btn:hover {
-  background-color: #2980b9;
+.main-inicio-sesion .register-btn:hover {
+  background-color: #222432;
+  background-color: #c9d86d;
+}
+.main-inicio-sesion .register-container2 {
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 500px;
+  border: 2px solid #eaff6a;
+  margin: 50px auto;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Título del formulario */
+  /* Grupo de entrada */
+}
+@media (max-width: 800px) {
+  .main-inicio-sesion .register-container2 {
+    width: auto;
+    height: auto;
+  }
+}
+.main-inicio-sesion .register-container2 .register-form h1, .main-inicio-sesion .register-container2 .register-form .h1 {
+  text-align: center;
+  color: #eaff6a;
+  margin-bottom: 20px;
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+}
+.main-inicio-sesion .register-container2 .input-group {
+  margin-bottom: 15px;
+}
+.main-inicio-sesion .register-container2 .input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+.main-inicio-sesion .register-container2 .input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eaff6a;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+.main-inicio-sesion .register-container2 .input-group input:focus {
+  border-color: #c9d86d;
+  outline: none;
+}
+.main-inicio-sesion .register-btn {
+  background-color: #eaff6a;
+  border: none;
+  border-radius: 4px;
+  color: #1c1f30;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.main-inicio-sesion .register-btn:hover {
+  background-color: #222432;
   background-color: #c9d86d;
 }
 

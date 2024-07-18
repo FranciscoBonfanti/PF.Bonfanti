@@ -173,7 +173,6 @@ body {
   }
   
   .img-index {
-   
     width: auto; 
     max-width: 100%; 
     height: auto;
@@ -188,7 +187,6 @@ body {
     }
   }
 
- 
 /*----- FIN IMG LOCAL INDEX-------*/
 
 /**********FIN INDEX***************/
@@ -196,8 +194,8 @@ body {
 
 /**********FORMULARIO INICIO SESION***************/
 
-$primary-color: #3498db;
-$primary-dark-color: #2980b9;
+$primary-color: $color-primario;
+$primary-dark-color: $color-secundario;
 $text-color: #333;
 $background-color: #f5f5f5;
 $input-bg-color: #fff;
@@ -208,35 +206,113 @@ $link-color: $primary-color;
 
 
 /* Contenedor del formulario */
-.register-container {
-  background-color: transparent;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 40px;
-  width: 500px;
-  border: 2px solid $color-verde;
-  margin:50px auto;
-  margin-top: 100px;
+.main-inicio-sesion{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .register-container {
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 500px;
+    border: 2px solid $color-verde;
+    margin:50px auto;
+    margin-top: 100px;
+  
+    @media(max-width:800px){
+      width: auto;
+      height: auto;
+    }
+  
+    /* Título del formulario */
+    .register-form h1 {
+    text-align: center;
+    color: $color-verde;
+    margin-bottom: 20px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    }
+  
+    /* Grupo de entrada */
+  .input-group {
+    margin-bottom: 15px;
+  
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: white;
+    }
+  
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid $color-verde;
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color: #f4f4f4;
 
-  @media(max-width:800px){
-    width: auto;
-    height: auto;
+  
+        &:focus {
+            border-color: $color-verde-hover;
+            outline: none;
+        }
+    }
+  
+    
+  }
+  }
+  /* Botón de registro */
+  .register-btn {
+    background-color: $color-verde;
+    border: none;
+    border-radius: 4px;
+    color: $color-primario;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+        background-color: $button-bg-hover;
+        background-color: $color-verde-hover;
+    }
   }
 
-  /* Título del formulario */
-  .register-form h1 {
-  text-align: center;
-  color: $color-verde;
-  margin-bottom: 20px;
-  font-family: "Anton SC", sans-serif;
-  font-weight: 400;
-  }
+  .register-container2 {
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 500px;
+    border: 2px solid $color-verde;
+    margin:50px auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  /* Grupo de entrada */
-.input-group {
-  margin-bottom: 15px;
-
-  label {
+  
+    @media(max-width:800px){
+      width: auto;
+      height: auto;
+    }
+  
+    /* Título del formulario */
+    .register-form h1 {
+    text-align: center;
+    color: $color-verde;
+    margin-bottom: 20px;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    }
+  
+    /* Grupo de entrada */
+  .input-group {
+    margin-bottom: 15px;
+  
+    label {
       display: block;
       margin-bottom: 5px;
       color: white;
@@ -245,37 +321,40 @@ $link-color: $primary-color;
   input {
       width: 100%;
       padding: 10px;
-      border: 1px solid $input-border-color;
+      border: 1px solid $color-verde;
       border-radius: 4px;
       box-sizing: border-box;
-      background-color: $input-bg-color;
-      color: $text-color;
+      background-color: #f4f4f4;
+
 
       &:focus {
-          border-color: $primary-color;
+          border-color: $color-verde-hover;
           outline: none;
       }
   }
-
   
-}
-}
-/* Botón de registro */
-.register-btn {
-  background-color: $color-verde;
-  border: none;
-  border-radius: 4px;
-  color: $color-primario;
-  padding: 10px;
-  text-align: center;
-  width: 100%;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-      background-color: $button-bg-hover;
-      background-color: $color-verde-hover;
+    
   }
+  }
+  /* Botón de registro */
+  .register-btn {
+    background-color: $color-verde;
+    border: none;
+    border-radius: 4px;
+    color: $color-primario;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+        background-color: $button-bg-hover;
+        background-color: $color-verde-hover;
+    }
+  }
+
+
 }
 
 
@@ -602,7 +681,6 @@ $transition-duration: 0.5s;
 
 
 /*============  fin información  =============*/
-
 
 /*============  FIN ARMA TU PC  =============*/
 
