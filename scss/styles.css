@@ -11991,6 +11991,15 @@ body {
             backdrop-filter: blur(10px);
   }
 }
+.navbar .navbar-brand {
+  font-family: "Anton SC", sans-serif;
+  color: #eaff6a;
+}
+.navbar .nav-link {
+  font-family: "Anton SC", sans-serif;
+  color: #eaff6a;
+}
+
 /*-----CARRUSEL INDEX-------*/
 .carousel {
   margin-top: 55px;
@@ -12325,7 +12334,7 @@ body {
   justify-content: center;
 }
 .section-container-hot-sale .section_hot-sale {
-  background-color: #1c1f30;
+  background-color: #222432;
   display: flex;
   align-items: center;
   text-align: center;
